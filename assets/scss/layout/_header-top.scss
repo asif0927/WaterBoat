@@ -1,0 +1,39 @@
+.header-top{
+    background-color: $header-top-background!important;
+    .container{
+        padding: $header-padding 0;
+        .quick-contact-icons{
+            @extend %row-flex;
+            .icon-group-span{
+                margin-right: 10px;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                position: relative;
+                background: $header-background;
+                i{
+                    color: $white;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 25%;
+                    left: 25%;
+                }
+            }
+            .text{
+                .h4{
+                    font-size: 1.2rem;
+                    margin-bottom: 0;
+                    color: $black;
+                }
+                .caption-text{
+                    font-size: 1rem;
+                    color: $gray;
+                }
+            }
+            
+        }
+        .text-black{
+            color: $black;
+        }
+    }
+}
