@@ -9,3 +9,7 @@ ul{
 body{
     font-family: 'Oswald', sans-serif;
 }
+::selection{
+    background:$black;
+    color:$white;
+}

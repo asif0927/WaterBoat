@@ -1,0 +1,45 @@
+.footer{
+    padding: 4rem 0;
+    background: $black;
+    font-size: 15px;
+    color: #888;
+    p{
+        margin-bottom: 1rem;
+        &:nth-child(2){
+            font-family: 1.5rem;
+            word-spacing: 5px;
+        }
+        .learn-btn{
+            text-decoration: underline;
+        }
+    }
+    .footer-heading {
+        font-size: 16px;
+        color:$black;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        span{
+            border-bottom: 2px solid $header-background;
+        }
+    } 
+    .list-unstyled{
+        padding-left: 0;
+        li {
+            margin-bottom: 10px;
+            a{
+                color: $header-background;
+                text-decoration: none;
+            }
+        }
+    }
+    .copyright{
+        padding-top: 7rem;
+        text-align: center;
+        i{
+            color: red;
+        }
+        a{
+            text-decoration: underline;
+        }
+    }  
+}
