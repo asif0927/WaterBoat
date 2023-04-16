@@ -1,0 +1,37 @@
+.testimony{
+    blockquote{
+        border: 1px solid #ccc;
+        padding: 30px;
+        border-radius: 4px;
+        font-size: 16px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "''";
+            right: 10px;
+            bottom: -10px;
+            font-size: 50px;
+            color: #1089ff;
+        }
+    }
+   .vcard{
+     img{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+      }
+      .text {
+        line-height: 1;
+        margin-left: 10px;
+        strong{
+            font-size: 15px;
+            color:$black;
+            margin-bottom: 4px;
+        }
+        span{
+            font-size: 14px;
+            color: #ccc;
+        }
+      }
+    }
+}

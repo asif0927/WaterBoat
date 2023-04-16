@@ -322,4 +322,144 @@ form .form-group .btn {
   font-size: 14px;
   letter-spacing: 0.2rem;
   font-family: "Oswald", sans-serif;
+}
+
+.text-serif {
+  font-family: "Oswald", sans-serif;
+}
+
+.heading {
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #1089ff;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.person {
+  position: relative;
+}
+.person figure {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.person figure img {
+  transition: all 0.3s;
+}
+.person figure img:hover {
+  transform: scale(1.1);
+}
+.person figure .social {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 2;
+}
+.person figure .social .social-box {
+  display: block;
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  background: white;
+  position: relative;
+}
+.person figure .social .social-box i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #1089ff;
+}
+.person .person-contents span {
+  color: #1089ff;
+}
+
+.testimony blockquote {
+  border: 1px solid #ccc;
+  padding: 30px;
+  border-radius: 4px;
+  font-size: 16px;
+  position: relative;
+}
+.testimony blockquote::after {
+  position: absolute;
+  content: "''";
+  right: 10px;
+  bottom: -10px;
+  font-size: 50px;
+  color: #1089ff;
+}
+.testimony .vcard img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.testimony .vcard .text {
+  line-height: 1;
+  margin-left: 10px;
+}
+.testimony .vcard .text strong {
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 4px;
+}
+.testimony .vcard .text span {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.overlay-ship {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.overlay-ship::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+  background: rgba(16, 137, 255, 0.8);
+}
+@media (min-width: 768px) {
+  .overlay-ship {
+    padding: 5em 0;
+  }
+}
+.overlay-ship .container {
+  position: relative;
+  z-index: 1;
+}
+.overlay-ship .container h2 {
+  font-size: 2rem;
+}
+.overlay-ship .container .lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.overlay-ship .container .btn {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.2rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.jh {
+  background: red;
+  height: 600px;
 }/*# sourceMappingURL=main.css.map */
