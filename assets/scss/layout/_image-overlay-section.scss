@@ -1,0 +1,39 @@
+.bg-image-overlay{
+    background-size:cover;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    &::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        width: 100%;
+        background: $overlay-background;
+    }
+    @media (min-width: $tablet-breakpoint) {
+       padding: 5em 0;
+    }
+    .container{
+        position: relative;
+        z-index: 1;
+        .row{
+            @extend %row-flex;
+            h3{
+                font-size: 50px;
+                color: $white;
+                font-family:$font-family;
+                z-index: 99;
+            }
+            span{
+                color: $white;
+                font-size: 1rem;
+            }
+        }
+
+    }
+}
