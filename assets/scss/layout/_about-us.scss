@@ -1,0 +1,30 @@
+.about-us-section{
+    padding: 5em 0;
+    .text-serif{
+        font-family: 'Dancing Script', sans-serif;
+    }
+    .text-black{
+      position: relative;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background:$header-background;
+      }
+    }
+    p{
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        .btn{
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: .2rem;
+            font-family: "Oswald", sans-serif;
+        }
+    }
+}

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 .hero-slide .intro-section {
   display: flex;
   justify-content: center;
@@ -17,6 +19,10 @@
 
 ul {
   list-style: none;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
 }
 
 .header-top {
@@ -55,6 +61,8 @@ ul {
 
 .sticky-wrapper {
   z-index: 100;
+  position: sticky;
+  top: 0;
   width: 100%;
   background: white;
 }
@@ -89,163 +97,6 @@ ul {
   width: 70%;
 }
 
-/*.hero-slide {
-    position: relative;
-    height: 500px;
-
-    .intro-section {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-
-      h1 {
-        font-size: 48px;
-        font-weight: 700;
-        margin-bottom: 20px;
-      }
-
-      p {
-        font-size: 20px;
-        line-height: 1.5;
-        margin-bottom: 30px;
-      }
-
-      .btn {
-        font-size: 18px;
-        font-weight: 600;
-        text-transform: uppercase;
-      }
-    }
-
-    .owl-stage-outer {
-      position: relative;
-      height: 100%;
-      overflow: hidden;
-
-      .owl-stage {
-        display: flex;
-        transition: all 0.5s ease-in-out;
-
-        .owl-item {
-          flex: 0 0 100%;
-          margin-right: 30px;
-
-          &:last-child {
-            margin-right: 0;
-          }
-        }
-      }
-    }
-
-    .owl-nav {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 100%;
-
-      .owl-prev,
-      .owl-next {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-
-        &:hover {
-          /*background: #f9f9f9;*/
-/*}
-
-    &:before {
-      font-family: 'Font Awesome\ 5 Free';
-      font-weight: 900;
-      font-size: 24px;
-    }
-  }
-
-  .owl-prev {
-    left: 30px;
-
-    &:before {
-      content: "\f104";
-    }
-  }
-
-  .owl-next {
-    right: 30px;
-
-    &:before {
-      content: "\f105";
-    }
-  }
-}
-
-.owl-dots {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-
-  .owl-dot {
-    flex: 0 0 10px;
-    height: 10px;
-    border-radius: 50%;
-    /*background: rgba(255, 255, 255, 0.5);*/
-/* margin-right: 10px;
- cursor: pointer;
-
- &:last-child {
-   margin-right: 0;
- }
-
- &.active {
-  /* background: #fff;*/
-/* }
-      }
-    }
-
-    // Responsive
-    @media only screen and (max-width:$tablet-breakpoint) {
-      height: 300px;
-
-      .intro-section {
-        h1 {
-          font-size: 36px;
-        }
-
-        p {
-          font-size: 16px;
-          margin-bottom: 20px;
-        }
-
-        .btn {
-          font-size: 14px;
-        }
-      }
-
-      .owl-stage-outer {
-        .owl-stage {
-          .owl-item {
-            margin-right: 20
-          }
-        }
-      }
-    }
-}*/
 .hero-slide .intro-section {
   background-size: cover;
   background-position: center;
@@ -256,12 +107,18 @@ ul {
 }
 .hero-slide .intro-section h1 {
   font-size: 3rem;
+  color: white;
+  font-weight: 300 !important;
 }
 .hero-slide .intro-section p {
   font-size: 1.2rem;
+  color: white;
+  font-weight: 300 !important;
 }
 .hero-slide .intro-section .btn {
   font-size: 1.2rem;
+  color: white;
+  font-weight: 300 !important;
 }
 
 @media (max-width: 768px) {
@@ -325,4 +182,48 @@ ul {
     margin: 2px 5px;
     background: #1089ff;
   }
+}
+.about-us-section {
+  padding: 5em 0;
+}
+.about-us-section .text-serif {
+  font-family: "Dancing Script", sans-serif;
+}
+.about-us-section .text-black {
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.about-us-section .text-black::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #1089ff;
+}
+.about-us-section p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.about-us-section p .btn {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.2rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.service-icon .col-md-6, .service-icon .col-lg-4 {
+  margin-bottom: 40px;
+}
+.service-icon .wrap-icon-39293 {
+  position: relative;
+  margin-bottom: 20px;
+  display: block;
+}
+.service-icon .wrap-icon-39293 i {
+  line-height: 0;
+  font-size: 70px;
+  color: #1089ff;
 }/*# sourceMappingURL=main.css.map */
